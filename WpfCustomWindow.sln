@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomWindow", "WpfCustomWindow\WpfCustomWindow.csproj", "{52A1A13F-E8DB-4F2F-A216-E7CAFCE5DE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAdonisUITheme", "WpfAdonisUITheme\WpfAdonisUITheme.csproj", "{7F36CE5D-431A-4CEF-AF86-9AA0FB151284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMahAppsMetro", "WpfMahAppsMetro\WpfMahAppsMetro.csproj", "{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52A1A13F-E8DB-4F2F-A216-E7CAFCE5DE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A1A13F-E8DB-4F2F-A216-E7CAFCE5DE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A1A13F-E8DB-4F2F-A216-E7CAFCE5DE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A1A13F-E8DB-4F2F-A216-E7CAFCE5DE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F36CE5D-431A-4CEF-AF86-9AA0FB151284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F36CE5D-431A-4CEF-AF86-9AA0FB151284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F36CE5D-431A-4CEF-AF86-9AA0FB151284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F36CE5D-431A-4CEF-AF86-9AA0FB151284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
