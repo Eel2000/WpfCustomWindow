@@ -3,10 +3,51 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:WpfMaterialdesignEx.ViewModels"
         xmlns:local="clr-namespace:WpfMaterialdesignEx"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
     <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel VerticalAlignment="Center">
+            <materialDesign:Icon/>
+            
+            <TextBlock Text="Welcome user Admin@243"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="20"
+                       FontFamily="Callibri" />
+
+            <TextBlock Text="Find below the modules that you have access too" 
+                       HorizontalAlignment="Center"
+                       Margin="0,20,0,0"/>
+        </StackPanel>
+
+        <ListBox Grid.Row="1" Style="{StaticResource MaterialDesignGridList}"
+                 ItemsSource="{Binding Path=Modules, Mode=OneTime}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="8">
+                        <DockPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="64" Height="64">
+                            <TextBlock DockPanel.Dock="Bottom" FontSize="12" Text="{Binding Path=Label, Mode=OneTime}"
+                                       Margin="0,8,0,0" HorizontalAlignment="Center" />
+                            <materialDesign:PackIcon Kind="{Binding Path=IconKind, Mode=OneTime}"
+                                                     Height="42" Width="42"
+                                                     HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </DockPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>
