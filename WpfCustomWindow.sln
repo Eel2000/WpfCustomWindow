@@ -1,12 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCustomWindow", "WpfCustomWindow\WpfCustomWindow.csproj", "{52A1A13F-E8DB-4F2F-A216-E7CAFCE5DE28}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfCustomWindow", "WpfCustomWindow\WpfCustomWindow.csproj", "{52A1A13F-E8DB-4F2F-A216-E7CAFCE5DE28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAdonisUITheme", "WpfAdonisUITheme\WpfAdonisUITheme.csproj", "{7F36CE5D-431A-4CEF-AF86-9AA0FB151284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAdonisUITheme", "WpfAdonisUITheme\WpfAdonisUITheme.csproj", "{7F36CE5D-431A-4CEF-AF86-9AA0FB151284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMahAppsMetro", "WpfMahAppsMetro\WpfMahAppsMetro.csproj", "{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMahAppsMetro", "WpfMahAppsMetro\WpfMahAppsMetro.csproj", "{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMaterialdesignEx", "WpfMaterialdesignEx\WpfMaterialdesignEx.csproj", "{1BC41412-7958-40C4-9828-41DD7CE7EE8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMaterialdesignEx", "WpfMaterialdesignEx\WpfMaterialdesignEx.csproj", "{1BC41412-7958-40C4-9828-41DD7CE7EE8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUiDesktopApp", "WpfUiDesktopApp\WpfUiDesktopApp.csproj", "{DCFE0AE7-01C9-4912-A61C-9940A0E24201}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,12 @@ Global
 		{1BC41412-7958-40C4-9828-41DD7CE7EE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BC41412-7958-40C4-9828-41DD7CE7EE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BC41412-7958-40C4-9828-41DD7CE7EE8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCFE0AE7-01C9-4912-A61C-9940A0E24201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCFE0AE7-01C9-4912-A61C-9940A0E24201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCFE0AE7-01C9-4912-A61C-9940A0E24201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCFE0AE7-01C9-4912-A61C-9940A0E24201}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
