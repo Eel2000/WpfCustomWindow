@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAdonisUITheme", "WpfAdon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMahAppsMetro", "WpfMahAppsMetro\WpfMahAppsMetro.csproj", "{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMaterialdesignEx", "WpfMaterialdesignEx\WpfMaterialdesignEx.csproj", "{1BC41412-7958-40C4-9828-41DD7CE7EE8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE7FD78-BF6B-4214-9852-EFD5A7174ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC41412-7958-40C4-9828-41DD7CE7EE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC41412-7958-40C4-9828-41DD7CE7EE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC41412-7958-40C4-9828-41DD7CE7EE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC41412-7958-40C4-9828-41DD7CE7EE8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
