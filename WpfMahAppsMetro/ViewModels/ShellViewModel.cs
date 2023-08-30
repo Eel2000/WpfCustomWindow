@@ -22,7 +22,7 @@ public class ShellViewModel : BaseViewModel
     {
         Menu.Add(new MenuItem()
         {
-            Icon = new PackIconFontAwesome() { Kind = PackIconFontAwesomeKind.DashcubeBrands },
+            Icon = new PackIconFontAwesome() { Kind = PackIconFontAwesomeKind.BorderAllSolid },
             Label = "Home",
             NavigationType = typeof(Dashboard),
             NavigationDestination = new Uri("Views/" + nameof(Dashboard) + ".xaml", UriKind.RelativeOrAbsolute)
