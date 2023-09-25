@@ -21,9 +21,7 @@ public partial class MainViewModel : BaseViewModel
                 new MenuItem { MenuName = "Employees", Icon = @"Resources/Assets/management_30px.png" },
                 new MenuItem { MenuName = "Visa", Icon = @"Assets/visa_30px.png" },
                 new MenuItem { MenuName = "Passport Validity", Icon = @"Resources/Assets/customs_30px.png" },
-                new MenuItem { MenuName = "Settings", Icon = @"Resources/Assets/Music_Icon.png" },
-                new MenuItem { MenuName = "Movies", Icon = @"Assets/Movies_Icon.png" },
-                new MenuItem { MenuName = "Trash", Icon = @"Assets/Trash_Icon.png" }
+                new MenuItem { MenuName = "Settings", Icon = @"Resources/Assets/Music_Icon.png" }
             };
     }
 }
