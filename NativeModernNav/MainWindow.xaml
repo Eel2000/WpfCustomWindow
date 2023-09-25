@@ -5,7 +5,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:NativeModernNav"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:model="clr-namespace:NativeModernNav.Models"
     xmlns:ui="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
+    xmlns:vm="clr-namespace:NativeModernNav.ViewModels"
     Width="1265"
     Height="568"
     MinWidth="1265"
@@ -21,6 +23,10 @@
     <Window.Style>
         <Style BasedOn="{StaticResource {x:Type Window}}" TargetType="Window" />
     </Window.Style>
+
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -56,15 +62,15 @@
 
                 <ItemsControl ItemsSource="{Binding SourceCollection}">
                     <ItemsControl.ItemTemplate>
-                        <DataTemplate>
+                        <DataTemplate DataType="model:MenuItem">
                             <StackPanel>
                                 <RadioButton
-                                    Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}, Path=DataContext.MenuCommand}"
+                                    Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}, Path=DataContext.NavigateCommand}"
                                     CommandParameter="{Binding MenuName}"
                                     Content="{Binding MenuName}"
                                     GroupName="MenuGroup"
                                     Style="{StaticResource MenuButtonStyle}"
-                                    Tag="{Binding MenuImage}" />
+                                    Tag="{Binding Icon}" />
                             </StackPanel>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>

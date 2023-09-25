@@ -8,6 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Assets\customs_30px.png" />
+    <None Remove="Resources\Assets\database_administrator_30px.png" />
+    <None Remove="Resources\Assets\database_import_30px.png" />
+    <None Remove="Resources\Assets\home_icon.jpg" />
+    <None Remove="Resources\Assets\icons8_open_box.ico" />
+    <None Remove="Resources\Assets\management_30px.png" />
+    <None Remove="Resources\Assets\passport_30px.png" />
+    <None Remove="Resources\Assets\setting.png" />
+    <None Remove="Resources\Assets\visa_30px.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AdonisUI" Version="1.17.1" />
     <PackageReference Include="AdonisUI.ClassicTheme" Version="1.17.1" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
@@ -15,6 +27,18 @@
 
   <ItemGroup>
     <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Assets\customs_30px.png" />
+    <Resource Include="Resources\Assets\database_administrator_30px.png" />
+    <Resource Include="Resources\Assets\database_import_30px.png" />
+    <Resource Include="Resources\Assets\home_icon.jpg" />
+    <Resource Include="Resources\Assets\icons8_open_box.ico" />
+    <Resource Include="Resources\Assets\management_30px.png" />
+    <Resource Include="Resources\Assets\passport_30px.png" />
+    <Resource Include="Resources\Assets\setting.png" />
+    <Resource Include="Resources\Assets\visa_30px.png" />
   </ItemGroup>
 
 </Project>
