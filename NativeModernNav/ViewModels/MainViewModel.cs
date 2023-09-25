@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using NativeModernNav.Models;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Data;
 
 namespace NativeModernNav.ViewModels;
@@ -30,7 +31,7 @@ public partial class MainViewModel : BaseViewModel
     {
         MenuItems = new ObservableCollection<MenuItem>
         {
-            new MenuItem { MenuName = "Dashboard", Icon = @"/Resources/Assets/home_icon.jpg" },
+            new MenuItem { MenuName = "Dashboard", Icon = @"/Resources/Assets/home_icon.jpg" , Active = true},
             new MenuItem { MenuName = "Database", Icon = @"/Resources/Assets/database_administrator_30px.png" },
             new MenuItem { MenuName = "Employees", Icon = @"/Resources/Assets/management_30px.png" },
             new MenuItem { MenuName = "Visa", Icon = @"/Resources/Assets/visa_30px.png" },
@@ -44,6 +45,13 @@ public partial class MainViewModel : BaseViewModel
     {
         try
         {
+
+            foreach (var menu in MenuItems)
+                menu.Active = false;
+
+            var toDeactivate = MenuItems.FirstOrDefault(x => x.MenuName == viewModel);
+            toDeactivate.Active = true;
+
             var switcher = viewModel switch
             {
                 "Dashboard" => SelectedViewModel = this,

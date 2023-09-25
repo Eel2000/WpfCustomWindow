@@ -70,6 +70,7 @@
                                     CommandParameter="{Binding MenuName}"
                                     Content="{Binding MenuName}"
                                     GroupName="MenuGroup"
+                                    IsChecked="{Binding Active}"
                                     Style="{StaticResource MenuButtonStyle}"
                                     Tag="{Binding Icon}" />
                             </Grid>

@@ -5,4 +5,5 @@ public class MenuItem
 {
     public string MenuName { get; set; }
     public string Icon { get; set; }
+    public bool Active { get; set; }
 }
