@@ -63,15 +63,16 @@
                 <ItemsControl ItemsSource="{Binding SourceCollection}">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate DataType="model:MenuItem">
-                            <StackPanel>
+                            <Grid Width="340">
                                 <RadioButton
+                                    Width="450"
                                     Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}, Path=DataContext.NavigateCommand}"
                                     CommandParameter="{Binding MenuName}"
                                     Content="{Binding MenuName}"
                                     GroupName="MenuGroup"
                                     Style="{StaticResource MenuButtonStyle}"
                                     Tag="{Binding Icon}" />
-                            </StackPanel>
+                            </Grid>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
@@ -80,6 +81,14 @@
 
         </Grid>
 
-        <Grid Grid.Column="1" Background="WhiteSmoke" />
+        <Grid Grid.Column="1" Background="WhiteSmoke">
+            <RadioButton
+                Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}, Path=DataContext.NavigateCommand}"
+                CommandParameter="{Binding MenuName}"
+                Content="Test"
+                GroupName="MenuGroup"
+                Style="{StaticResource MenuButtonStyle}"
+                Tag="/Resources/Assets/home_icon.jpg" />
+        </Grid>
     </Grid>
 </ui:AdonisWindow>

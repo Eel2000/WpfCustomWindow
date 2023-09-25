@@ -2,5 +2,10 @@
 
     <SolidColorBrush x:Key="PrimaryColor">#122A48</SolidColorBrush>
     <SolidColorBrush x:Key="TextColor">White</SolidColorBrush>
+    <SolidColorBrush x:Key="TextColor100">#F8F9FA</SolidColorBrush>
+    <SolidColorBrush x:Key="PrimaryDeep">#0a192b</SolidColorBrush>
+    <SolidColorBrush x:Key="Accent101">#F8F9FA</SolidColorBrush>
+    <SolidColorBrush x:Key="Accent200">#41546c</SolidColorBrush>
+    <SolidColorBrush x:Key="Accent201">#00AADA</SolidColorBrush>
 
 </ResourceDictionary>

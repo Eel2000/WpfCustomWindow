@@ -3,7 +3,7 @@
 
     <Style x:Key="MenuButtonStyle" TargetType="RadioButton">
 
-        <Setter Property="Width" Value="250" />
+        <Setter Property="Width" Value="240" />
         <Setter Property="Height" Value="60" />
         <Setter Property="Margin" Value="0,3,0,0" />
 
@@ -14,12 +14,13 @@
                     <Grid Margin="0,0,0,0">
 
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="180" />
+                            <ColumnDefinition Width="Auto" />
 
                         </Grid.ColumnDefinitions>
 
                         <Border
                             x:Name="border"
+                            Width="240"
                             Background="Transparent"
                             BorderThickness="0"
                             CornerRadius="0" />
@@ -41,18 +42,18 @@
                             HorizontalAlignment="Left"
                             VerticalAlignment="Center"
                             FontFamily="Fonts/Roboto-Regular.ttf #Roboto Regular"
-                            FontSize="15"
-                            Foreground="#F8F9FA"
+                            FontSize="18"
+                            Foreground="{DynamicResource TextColor100}"
                             Text="{TemplateBinding Property=Content}" />
 
                         <Border
                             x:Name="Highlighter"
-                            Width="4"
+                            Width="5"
                             Height="250"
                             Margin="0,0,5,0"
                             HorizontalAlignment="Left"
-                            Background="#00AADA"
-                            CornerRadius="2"
+                            Background="{DynamicResource Accent101}"
+                            CornerRadius="0"
                             Visibility="Collapsed" />
 
                     </Grid>
@@ -61,13 +62,13 @@
 
                         <Trigger Property="IsMouseOver" Value="True">
 
-                            <Setter TargetName="border" Property="Background" Value="#414141" />
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource Accent200}" />
 
                         </Trigger>
 
                         <Trigger Property="IsChecked" Value="True">
 
-                            <Setter TargetName="border" Property="Background" Value="#414141" />
+                            <Setter TargetName="border" Property="Background" Value="Transparent" />
 
 
                             <Setter TargetName="Highlighter" Property="Visibility" Value="Visible" />
