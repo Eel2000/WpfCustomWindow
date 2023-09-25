@@ -1,20 +1,41 @@
 using System.Collections.Generic;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using MaterialDesignThemes.Wpf;
 using WpfAdonisMatDisgnEx.Models;
 
 namespace WpfAdonisMatDisgnEx.ViewModels;
 
-public class MainViewModel
+public partial class MainViewModel : BaseViewModel
 {
-    private List<Module> _modules = new()
+    [ObservableProperty] private BaseViewModel _currentViewModel;
+    [ObservableProperty] private PackIconKind _icon;
+
+    [ObservableProperty] private List<Module> _modules = new()
     {
         new Module() { IconKind = PackIconKind.Android, Label = "Android" },
         new Module() { IconKind = PackIconKind.AppleIos, Label = "IOS" },
         new Module() { IconKind = PackIconKind.Desk, Label = "Windows" },
     };
 
-    public List<Module> Modules
+
+    public MainViewModel()
     {
-        get => _modules;
+        Title = "Menu side";
+        CurrentViewModel = new HomeViewModel();
+    }
+
+    [RelayCommand]
+    public void ShowHomeView()
+    {
+        CurrentViewModel = new HomeViewModel();
+        Icon = PackIconKind.Home;
+    }
+
+    [RelayCommand]
+    public void ShowSettingsView()
+    {
+        CurrentViewModel = new SettingsViewModel();
+        Icon = PackIconKind.Settings;
     }
 }

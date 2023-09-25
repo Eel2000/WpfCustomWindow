@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMahAppsMetro", "WpfMahAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfMaterialdesignEx", "WpfMaterialdesignEx\WpfMaterialdesignEx.csproj", "{1BC41412-7958-40C4-9828-41DD7CE7EE8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUiDesktopApp", "WpfUiDesktopApp\WpfUiDesktopApp.csproj", "{DCFE0AE7-01C9-4912-A61C-9940A0E24201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfUiDesktopApp", "WpfUiDesktopApp\WpfUiDesktopApp.csproj", "{DCFE0AE7-01C9-4912-A61C-9940A0E24201}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAdonisMatDisgnEx", "WpfAdonisMatDisgnEx\WpfAdonisMatDisgnEx.csproj", "{B0484CF6-082A-4CAC-B56A-4589CC2B8120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAdonisMatDisgnEx", "WpfAdonisMatDisgnEx\WpfAdonisMatDisgnEx.csproj", "{B0484CF6-082A-4CAC-B56A-4589CC2B8120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NativeModernNav", "NativeModernNav\NativeModernNav.csproj", "{36A098CC-FCF2-41F5-AE3D-7FDE7FD9FE4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B0484CF6-082A-4CAC-B56A-4589CC2B8120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0484CF6-082A-4CAC-B56A-4589CC2B8120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0484CF6-082A-4CAC-B56A-4589CC2B8120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A098CC-FCF2-41F5-AE3D-7FDE7FD9FE4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A098CC-FCF2-41F5-AE3D-7FDE7FD9FE4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A098CC-FCF2-41F5-AE3D-7FDE7FD9FE4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A098CC-FCF2-41F5-AE3D-7FDE7FD9FE4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

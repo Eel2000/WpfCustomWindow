@@ -1,0 +1,94 @@
+<adonis:AdonisWindow x:Class="WpfAdonisMatDisgnEx.SideMenuWindow"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:adonis="clr-namespace:AdonisUI.Controls;assembly=AdonisUI"
+                     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                     xmlns:vm="clr-namespace:WpfAdonisMatDisgnEx.ViewModels"
+                     xmlns:local="clr-namespace:WpfAdonisMatDisgnEx.Views"
+                     mc:Ignorable="d"
+                     Title="{Binding Path=Title}" Height="450" Width="800"
+                     TitleBarForeground="DarkGray"
+                     WindowStartupLocation="CenterScreen"
+                     ShowInTaskbar="True"
+                     IconVisibility="Collapsed"
+                     PlaceTitleBarOverContent="True"
+                     Background="#262626">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:HomeViewModel}">
+            <local:HomeView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+            <local:Settings />
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- side menu -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <!-- title and logo-->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <materialDesign:PackIcon Kind="WheelBarrow"
+                                         Foreground="BlueViolet"
+                                         Margin="5,2,0,0"
+                                         Height="25"
+                                         Width="25"/>
+                <TextBlock Text="Side Menu App" FontSize="20" Margin="10,0,0,0"
+                           Foreground="BlueViolet"/>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1"
+                Orientation="Vertical"
+                FlowDirection="LeftToRight"
+                Margin="0,20,10,0"
+                HorizontalAlignment="Left"
+                Background="#222222">
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" 
+                        Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" 
+                        materialDesign:ButtonAssist.CornerRadius="6" 
+                        Width="auto" Height="35" 
+                        materialDesign:RippleAssist.Feedback="White" 
+                        Margin="0 0 0 15"
+                        Command="{Binding ShowHomeViewCommand}">
+                    <WrapPanel Width="110">
+                        <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" Margin="0 0 20 0"/>
+                        <TextBlock>Dashboard</TextBlock>
+                    </WrapPanel>
+                </Button>
+
+                <Button Style="{StaticResource MaterialDesignFlatButton}" 
+                        Foreground="{DynamicResource PrimaryHueLightForegroundBrush}" 
+                        materialDesign:ButtonAssist.CornerRadius="6" Width="auto" Height="35" 
+                        materialDesign:RippleAssist.Feedback="White" Margin="0 0 0 15"
+                        Command="{Binding ShowSettingsViewCommand}">
+                    <WrapPanel Width="110">
+                        <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" Margin="0 0 20 0"/>
+                        <TextBlock>Settings</TextBlock>
+                    </WrapPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <ContentControl Content="{Binding CurrentViewModel}"
+                        Grid.Column="1"
+                        Margin="5" />
+
+    </Grid>
+</adonis:AdonisWindow>
