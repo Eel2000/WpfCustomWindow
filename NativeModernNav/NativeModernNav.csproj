@@ -26,10 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Resources\Assets\customs_30px.png" />
     <Resource Include="Resources\Assets\database_administrator_30px.png" />
     <Resource Include="Resources\Assets\database_import_30px.png" />

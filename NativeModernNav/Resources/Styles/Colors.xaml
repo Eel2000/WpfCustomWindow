@@ -7,5 +7,6 @@
     <SolidColorBrush x:Key="Accent101">#F8F9FA</SolidColorBrush>
     <SolidColorBrush x:Key="Accent200">#41546c</SolidColorBrush>
     <SolidColorBrush x:Key="Accent201">#00AADA</SolidColorBrush>
+    <SolidColorBrush x:Key="PageBackground">WhiteSmoke</SolidColorBrush>
 
 </ResourceDictionary>

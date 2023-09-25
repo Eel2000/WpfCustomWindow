@@ -82,14 +82,8 @@
 
         </Grid>
 
-        <Grid Grid.Column="1" Background="WhiteSmoke">
-            <RadioButton
-                Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}, Path=DataContext.NavigateCommand}"
-                CommandParameter="{Binding MenuName}"
-                Content="Test"
-                GroupName="MenuGroup"
-                Style="{StaticResource MenuButtonStyle}"
-                Tag="/Resources/Assets/home_icon.jpg" />
+        <Grid Grid.Column="1" Background="Transparent">
+            <ContentControl x:Name="Content" Content="{Binding SelectedViewModel}" />
         </Grid>
     </Grid>
 </ui:AdonisWindow>

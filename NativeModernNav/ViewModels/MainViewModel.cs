@@ -19,11 +19,9 @@ public partial class MainViewModel : BaseViewModel
 
     public MainViewModel()
     {
+        Title = "Resource Not Found";
+
         LoadMenu();
-
-        _menuItemsCollection = new() { Source = MenuItems };
-
-        SelectedViewModel = this;
     }
 
 
@@ -38,6 +36,10 @@ public partial class MainViewModel : BaseViewModel
             new MenuItem { MenuName = "Passport Validity", Icon = @"/Resources/Assets/customs_30px.png" },
             new MenuItem { MenuName = "Settings", Icon = @"/Resources/Assets/setting.png" }
         };
+
+        SelectedViewModel = new DashboardViewModel();
+
+        _menuItemsCollection = new() { Source = MenuItems };
     }
 
     [RelayCommand]
@@ -46,21 +48,21 @@ public partial class MainViewModel : BaseViewModel
         try
         {
 
-            foreach (var menu in MenuItems)
-                menu.Active = false;
+            //foreach (var menu in MenuItems)
+            //    menu.Active = false;
 
-            var toDeactivate = MenuItems.FirstOrDefault(x => x.MenuName == viewModel);
-            toDeactivate.Active = true;
+            //var toDeactivate = MenuItems.FirstOrDefault(x => x.MenuName == viewModel);
+            //toDeactivate.Active = true;
 
             var switcher = viewModel switch
             {
-                "Dashboard" => SelectedViewModel = this,
-                "Database" => SelectedViewModel = this,
+                "Dashboard" => SelectedViewModel = new DashboardViewModel(),
+                "Database" => SelectedViewModel = new DatabaseViewModel(),
                 "Employees" => SelectedViewModel = this,
-                "Visa" => SelectedViewModel = this,
+                "Visa" => SelectedViewModel =this,
                 "Passport Validity" => this,
                 "Settings" => this,
-                _ => SelectedViewModel = this
+                _ => SelectedViewModel = new DashboardViewModel()
             };
         }
         catch (System.Exception e)
