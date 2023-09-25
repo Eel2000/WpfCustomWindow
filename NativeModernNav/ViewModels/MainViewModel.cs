@@ -29,7 +29,7 @@ public partial class MainViewModel : BaseViewModel
     {
         MenuItems = new ObservableCollection<MenuItem>
         {
-            new MenuItem { MenuName = "Dashboard", Icon = @"/Resources/Assets/home_icon.jpg" , Active = true},
+            new MenuItem { MenuName = "Dashboard", Icon = @"/Resources/Assets/home_icon.png" , Active = true},
             new MenuItem { MenuName = "Database", Icon = @"/Resources/Assets/database_administrator_30px.png" },
             new MenuItem { MenuName = "Employees", Icon = @"/Resources/Assets/management_30px.png" },
             new MenuItem { MenuName = "Visa", Icon = @"/Resources/Assets/visa_30px.png" },

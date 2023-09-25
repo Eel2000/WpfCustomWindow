@@ -4,7 +4,7 @@
     <Style x:Key="MenuButtonStyle" TargetType="RadioButton">
 
         <Setter Property="Width" Value="240" />
-        <Setter Property="Height" Value="60" />
+        <Setter Property="Height" Value="65" />
         <Setter Property="Margin" Value="0,3,0,0" />
 
         <Setter Property="Template">
@@ -49,7 +49,7 @@
                         <Border
                             x:Name="Highlighter"
                             Width="5"
-                            Height="250"
+                            Height="235"
                             Margin="0,0,5,0"
                             HorizontalAlignment="Left"
                             Background="{DynamicResource Accent101}"
